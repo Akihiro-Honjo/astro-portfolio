@@ -2,13 +2,43 @@
 // import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
 
+
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
+<link rel="stylesheet" href="/src/styles/style.css">
 
 
 <Layout title="ホーム">
-	<h1 class="text-3xl font-bold mb-4">Akihiro Honjoのポートフォリオ</h1>
-	<p class="text-lg">ようこそ！私のポートフォリオサイトへ。</p>
-</Layout>
+<!-- 自己紹介 -->
+	<section class="intro">
+		<h1 class="text-3xl font-bold mb-4">本庄 祥宏 (Honjo Akihiro)</h1>
+		<p class="mb-2">
+		📧 <a href="mailto:akhr0711.h.a@gmail.com" class="text-blue-600 hover:underline">akhr0711.h.a@gmail.com</a>
+		</p>
+		<p>
+		🐙 <a href="https://github.com/Akihiro-Honjo" target="_blank" class="text-blue-600 hover:underline">GitHub</a>
+		</p>
+	</section>
 
+	<!-- プロジェクトセクション -->
+	<section id="projects" class="projects">
+		<h2 class="section-title">🚀 プロジェクト</h2>
+
+		<div class="project-container">
+		<!-- プロジェクト1 -->
+		<div class="project-card">
+			<h3 class="project-title">TRAYLECT</h3>
+			<p>何万種類とあるトレーから最適なトレーをAIが提案し画像つきで表示してくれるアプリです。</p>
+			<a href="https://github.com/your-username/shingi-app" target="_blank">View on GitHub</a>
+		</div>
+
+		<!-- プロジェクト2 -->
+		<div class="project-card">
+			<h3 class="project-title">IT NEWS</h3>
+			<p>ITメディアNEWSサイトから毎朝7時におすすめのニュースを10個ピックアップして表示してくれます。</p>
+			<a href="https://github.com/your-username/joeynmt" target="_blank">View on GitHub</a>
+		</div>
+		</div>
+	</section>
+</Layout>

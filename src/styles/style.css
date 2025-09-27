@@ -1,0 +1,45 @@
+.section-title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-card {
+    flex: 1 1 300px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 20px;
+    max-width: 500px;
+}
+
+.project-title {
+    font-size: 1.3rem;
+    color: #6c2bd9; /* 紫っぽく */
+    margin-bottom: 10px;
+}
+
+.project-description {
+    color: #444;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+}
+
+.github-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #6c2bd9;
+    font-weight: bold;
+}
+
+.github-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+}
