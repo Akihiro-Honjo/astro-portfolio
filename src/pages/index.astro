@@ -14,31 +14,54 @@ import Layout from '../layouts/Layout.astro';
 	<section class="intro">
 		<h1 class="text-3xl font-bold mb-4">本庄 祥宏 (Honjo Akihiro)</h1>
 		<p class="mb-2">
-		📧 <a href="mailto:akhr0711.h.a@gmail.com" class="text-blue-600 hover:underline">akhr0711.h.a@gmail.com</a>
+		<a href="mailto:akhr0711.h.a@gmail.com" class="text-blue-600 hover:underline">akhr0711.h.a@gmail.com</a>
 		</p>
 		<p>
-		🐙 <a href="https://github.com/Akihiro-Honjo" target="_blank" class="text-blue-600 hover:underline">GitHub</a>
+		<a href="https://github.com/Akihiro-Honjo" target="_blank" class="text-blue-600 hover:underline">GitHub</a>
 		</p>
 	</section>
 
 	<!-- プロジェクトセクション -->
 	<section id="projects" class="projects">
-		<h2 class="section-title">🚀 プロジェクト</h2>
+		<h2 class="section-title">プロジェクト</h2>
 
 		<div class="project-container">
 		<!-- プロジェクト1 -->
 		<div class="project-card">
 			<h3 class="project-title">TRAYLECT</h3>
-			<p>何万種類とあるトレーから最適なトレーをAIが提案し画像つきで表示してくれるアプリです。</p>
-			<a href="https://github.com/Akihiro-Honjo/traylect" target="_blank">View on GitHub</a>
+			<h4 class="project-description">何万種類とあるトレーから最適なトレーをAIが提案し画像つきで表示してくれるアプリです。</h4>
+			<p>	商品容器は何万種類もあり、最適なトレーを探すのに時間がかかります。AIにトレーの用途や特徴を読み込ませ、画像付きのデータベースと紐づけすることで
+				文字だけでなく画像からも最適なトレーを提案してくれます。
+			</p>
+			<a  class="github-link" href="https://github.com/Akihiro-Honjo/traylect" target="_blank">View on GitHub</a>
+			<video controls class="project-video">
+			<source src="public/製品情報検索 - Google Chrome 2024-04-08 23-03-36.mp4" type="video/mp4" />
+			お使いのブラウザは video タグに対応していません。
+	</video>
+
 		</div>
 
 		<!-- プロジェクト2 -->
-		<div class="project-card">
-			<h3 class="project-title">IT NEWS</h3>
-			<p>ITメディアNEWSサイトから毎朝7時におすすめのニュースを10個ピックアップして表示してくれます。</p>
-			<a href="https://github.com/Akihiro-Honjo/astro-newspage" target="_blank">View on GitHub</a>
-		</div>
+	<div class="project-card">
+		<h3 class="project-title">在庫管理アプリ</h3>
+
+		<h4 class="project-description">
+			Excelに取りまとめしていた在庫表をブラウザ上で確認できるアプリです。
+		</h4>
+		<p>社内でExcelにて在庫申請を行い、それを誰かが一つのExcelファイルにまとめ在庫一覧表にしていました。<br>
+			その手間をなくし、WEB上にアップするだけで在庫一覧として活用できます。また外出先からも確認でき、得意先との打ち合わせがスムーズになります。</p>
+		<a class="github-link"
+			href="https://github.com/Akihiro-Honjo/inventory-management"
+			target="_blank">
+			View on GitHub
+		</a>
+
+		<video controls class="project-video">
+			<source src="public/React App - Google Chrome 2025-12-09 22-27-03.mp4" type="video/mp4" />
+			お使いのブラウザは video タグに対応していません。
+		</video>
+	</div>
+
 		</div>
 	</section>
 </Layout>
